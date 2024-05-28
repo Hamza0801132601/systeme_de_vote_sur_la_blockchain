@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en ">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    
+  </head>
+  <body>
+    <div id="head" class="text-center">
+      <h1 align="center" style="color: azure;">ADEI ENSIAS Vote sur la Blockchain Ethereum</h1>
+      <br/> 
+    </div>
+
+    <div class="container">
+     <legend>Ajouter un candidat</legend>  
+     <table  class="table text-center"> 
+              <tr>
+                <th>Nom </th><td>  <input id="name" type="text" name="name" placeholder ="Nom du candidat" autocomplete="off"></td>  
+                <th>Age</th><td><input id="party" type="text" name="party" placeholder ="Âge du candidat"></td> 
+              </tr>
+      </table> 
+      <input id="addCandidate" type="submit" name="submit" value="Ajouter un candidat">
+      <p id="Aday"></p>
+    </div>
+
+    <div class="container">
+     <legend>Identifier la date de vote</legend>  
+     <table  class="table text-center"> 
+              <tr>              
+                <th>date de début</th><td><input id="startDate" type="date" name=""></td>
+                <th>date de fin</th><td>    <input id="endDate" type="date" name="" ></td>
+              </tr>
+      </table> 
+      <input id="addDate" type="submit" name="submit" value="Mettre la date">
+      <p id="Aday"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../dist/app.bundle.js" type="module"></script>
+  </body>
+</html>
